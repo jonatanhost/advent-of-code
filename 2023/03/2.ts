@@ -71,8 +71,6 @@ for (var i = 0; i < array.length; i++) {
     }
 }
 
-console.log(parts)
-
 const sum = parts.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0);
