@@ -31,17 +31,13 @@ cardObjects.forEach((element) => {
 
         // If card is a winner
         if (result) {
-            console.log(card);
-            if (points === 0) {
-                points = 1;
-            } else {
-                points = points * 2;
-            }
+            points += 1;
         }
         console.log("Points: ", points);
     }
+    cardObjects.splice(0, 0, element);
     sum += points;
 });
 
-console.log(cardObjects[0].card);
+console.log(cardObjects);
 console.log("Sum: ", sum);
